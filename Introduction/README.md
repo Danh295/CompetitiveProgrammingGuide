@@ -68,13 +68,12 @@ while(cin >> x) {
 
 ## Integers
 
-Most common integery type
-- 32-bit (value range of -2^31 to 2^31-1)
+Most common integer type
+- 32-bit (value range of -2<sup>31</sup> to 2<sup>31</sup>-1)
 
-If type 'int' is not enough, use **long long**
-- 64-bit type integer (value range of -2^63 to 2^63-1)
+If type 'int' is not enough, use '**long long**'
+- 64-bit type integer (value range of -2<sup>63</sup> to 2<sup>63</sup>-1)
 
-*eg.*
 ```
 long long x = 123456789123456789LL;
 int y = 2
@@ -90,15 +89,16 @@ Modulous of 2 numbers is the remainder value of their division
 *eg. x mod m is the remainder of x divied by m*
 - the remainder of a negative is either 0 or negative in C++
     - calculate the remainder as usual and add m to the result if it's negative
-    '''
+   
+    ```
     x = x%m;
     if (x < 0) x += m;
     ``` 
 
 **Property of the remainder**: in addition, subtraction, and multiplication, the remainder can be taken before the operation:
->(a + b) mod m = (a mod m + b mod m) mod m
->(a - b) mod m = (a mod m - b mod m) mod m
->(a * b) mod m = (a mod m * b mod m) mod m
+>(a + b) mod m = (a mod m + b mod m) mod m <br>
+>(a - b) mod m = (a mod m - b mod m) mod m <br>
+>(a * b) mod m = (a mod m * b mod m) mod m <br>
 - useful to avoid long long type; the number can never get too large
 
 
