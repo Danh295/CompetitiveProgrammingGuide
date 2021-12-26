@@ -68,10 +68,10 @@ while(cin >> x) {
 
 ## Integers
 
-Most common integer type
+Most common integer type: 'int'
 - 32-bit (value range of -2<sup>31</sup> to 2<sup>31</sup>-1)
 
-If type 'int' is not enough, use '**long long**'
+If type 'int' is not enough, there's 'long long'
 - 64-bit type integer (value range of -2<sup>63</sup> to 2<sup>63</sup>-1)
 
 ```
@@ -89,6 +89,7 @@ Modulous of 2 numbers is the remainder value of their division
 *eg. x mod m is the remainder of x divied by m*
 - the remainder of a negative is either 0 or negative in C++
     - calculate the remainder as usual and add m to the result if it's negative
+    - only needed if subtractions are invovled; remainders wouldn't be negative otherwise
 
 ```
 x = x%m;
@@ -101,7 +102,95 @@ if (x < 0) x += m;
 >(a * b) mod m = (a mod m * b mod m) mod m <br>
 - useful to avoid long long type; the number can never get too large
 
+## Floating Point Numbers
 
+'double' type floating point
+- 64-bit 
+
+'long double' type floating point
+- 80-bit
+- extension in the g++ compiler
+
+To output a predtermined number of decimals, 'printf' can be used as following:
+```
+printf("%.9\n", x);
+```
+- outputs the value with 9 decimal places
+
+Keep in mind that this method may return rounding errors as following:
+```
+double x = 0.3*3 + 0.1;
+printf("%20f\n", x); // 0.99999999999999988898
+```
+- due to rounding error, the value of x is slightly less than 1, which is the correct value
+- due to this, floating point numbers shouldn't be compared with the == operator
+
+When **comparing floating point numbers**, assume that 2 numbers are equal if their difference is less than 'ε', which is a small number
+- 'ε' is generally assumed to be eqaul to 10<sup>-9</sup>
+```
+if(abs(a-b) < 1e-9) { // 1e-9 means "one times ten to the negative ninth power"
+    // a and b are equal
+}
+```
+
+# Shortening Code
+
+Important in competitive programming to save time
+- try to use shorter names for datatypes, variables, etc.
+
+## Type names
+
+Using the function 'typedef' datatypes can be given shorter names
+
+For example:
+```
+// long long can be simplified as ll
+typedef long long ll;
+
+ll a = 123456789;
+ll b = 987654321;
+cout << a*b << "\n";
+
+// can also be used with complex types
+typedef vector<int> vi;
+typedef pair<int, int> pi;
+```
+
+## Macros
+
+Certain strings in the code can be changed before the compilation
+- defined using keyword '#define'
+
+For example:
+```
+// first and second can be reduced to F and S; push_back and make_pair can be reduced to PB and MP
+#define F first
+#define S second
+#define PB push_back
+#define MP make_pair
+
+v.PB(MP(x1, y1));
+v.PB(MP(x2, y2));
+int d = v[i].F + v[i].S;
+```
+
+Macros can even have parameters to shorten loops and other structures:
+```
+#define REP(i, a, b) for (int i = a; i <= b; i++)
+
+REP(i, 1, n) {
+    search(i);
+}
+```
+
+# Mathematics
+
+Absolutely necessary in competitive programming
+- This sections contains some useful formulas to remember
+
+## Sum formulas
+
+ h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> x + &theta;<sub>1</sub>x
 
 
 
