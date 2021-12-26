@@ -23,8 +23,8 @@ Choice of programming language can still depend on preference, as python and jav
 
 # Input and Output
 In most contests standard streams are used for input/ouput
-- In C++: use 'cin' for input and 'cout' for output
-- For C: 'scanf' and 'printf' can also be used
+- C++: use 'cin' for input and 'cout' for output
+- C: 'scanf' and 'printf' can also be used
     - This is applicable for both C++ and C
 
 
