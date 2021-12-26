@@ -24,6 +24,7 @@ Choice of programming language can still depend on preference, as python and jav
 # Input and Output
 In most contests standard streams are used for input/ouput
 - C++: use 'cin' for input and 'cout' for output
+<<<<<<< HEAD
     - Standard i/o streams
     - When printing on a new line for outputs, using "\n" is faster than "endl"
 
@@ -60,7 +61,6 @@ while(cin >> x) {
 - The loop reads elements from the input one after another, until there are no more
 
 # Working with Numbers
-
 
 
 
