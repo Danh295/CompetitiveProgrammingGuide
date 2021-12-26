@@ -89,7 +89,7 @@ Modulous of 2 numbers is the remainder value of their division
 *eg. x mod m is the remainder of x divied by m*
 - the remainder of a negative is either 0 or negative in C++
     - calculate the remainder as usual and add m to the result if it's negative
-   <br>
+   </br>
     ```
     x = x%m;
     if (x < 0) x += m;
