@@ -190,13 +190,21 @@ Absolutely necessary in competitive programming
 
 ## Sum formulas
 
-<!-- Formatting for mathematical symbols h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> x + &theta;<sub>1</sub>x -->
+### Sum of an arithmetic progression
+Incrementing sequence of numbers with common difference
 
-$$\sum_{i=1}^{n} x$$ 
+<mark>a + ... + b = [n(a + b)] / 2</mark>
+- n is the number of terms
+- a is the first number of the sequence
+- b is the last number of the sequence
 
-= 1 + 2 + 3 + ... + n = frac{n(n+1)}{2}
+*Here's an example:*
+*1 + 2 + 3 + ... + n = [n(n+1)]/2*
 
+### Sum of a geometric progression
+Incrementing seqeunce of numbers with common ratio
 
+<mark>ak<sup>0</sup> + ak<sup>1</sup> + ak<sup>2</sup> + ... + b = (bk - 1) / (k-1)
 
 
 
