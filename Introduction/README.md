@@ -33,7 +33,7 @@ C++: use 'cin' for input and 'cout' for output
 - when printing on a new line for outputs, using "\n" is faster than "endl"
 
 Including the following lines at the beginning of code can make input/output more efficient for cin and cout
-```
+```c++
 ios::sync_with_stdio(0);
 cin.tie(0);
 ```
@@ -43,21 +43,21 @@ C: 'scanf' and 'printf' can also be used
 - a bit faster but harder to use
 
 The followign lines takes input and prints 2 integers
-```
+```c++
 int a, b;
 scanf("%d %d". &a, &b);
 printf("%d %d\n", a, b);
 ```
 
 In order to read a whole line from input, containing spaces, use the 'getline' function as following:
-```
+```c++
 string s;
 getline(cin, s);
 ```
 - 'cin' and 'scanf' both stop taking inputs at a white space character
 
 If there's an unkown amount of data, consider using a while loop:
-```
+```c++
 while(cin >> x) {
     // code goes here
 }
@@ -74,7 +74,7 @@ Most common integer type: 'int'
 If type 'int' is not enough, there's 'long long'
 - 64-bit type integer (value range of -2<sup>63</sup> to 2<sup>63</sup>-1)
 
-```
+```c++
 long long x = 123456789123456789LL;
 int y = 2
 long long b = y*y; // this will produce an incorrect result
@@ -91,15 +91,15 @@ Modulous of 2 numbers is the remainder value of their division
     - calculate the remainder as usual and add m to the result if it's negative
     - only needed if subtractions are invovled; remainders wouldn't be negative otherwise
 
-```
+```c++
 x = x%m;
 if (x < 0) x += m;
 ``` 
 
 **Property of the remainder**: in addition, subtraction, and multiplication, the remainder can be taken before the operation:
->(a + b) mod m = (a mod m + b mod m) mod m <br>
->(a - b) mod m = (a mod m - b mod m) mod m <br>
->(a * b) mod m = (a mod m * b mod m) mod m <br>
+> (a + b) mod m = (a mod m + b mod m) mod m <br>
+> (a - b) mod m = (a mod m - b mod m) mod m <br>
+> (a * b) mod m = (a mod m * b mod m) mod m <br>
 - useful to avoid long long type; the number can never get too large
 
 ## Floating Point Numbers
@@ -112,13 +112,13 @@ if (x < 0) x += m;
 - extension in the g++ compiler
 
 To output a predtermined number of decimals, 'printf' can be used as following:
-```
+```c++
 printf("%.9\n", x);
 ```
 - outputs the value with 9 decimal places
 
 Keep in mind that this method may return rounding errors as following:
-```
+```c++
 double x = 0.3*3 + 0.1;
 printf("%20f\n", x); // 0.99999999999999988898
 ```
@@ -127,7 +127,7 @@ printf("%20f\n", x); // 0.99999999999999988898
 
 When **comparing floating point numbers**, assume that 2 numbers are equal if their difference is less than 'ε', which is a small number
 - 'ε' is generally assumed to be eqaul to 10<sup>-9</sup>
-```
+```c++
 if(abs(a-b) < 1e-9) { // 1e-9 means "one times ten to the negative ninth power"
     // a and b are equal
 }
@@ -143,7 +143,7 @@ Important in competitive programming to save time
 Using the function 'typedef' datatypes can be given shorter names
 
 For example:
-```
+```c++
 // long long can be simplified as ll
 typedef long long ll;
 
@@ -162,7 +162,7 @@ Certain strings in the code can be changed before the compilation
 - defined using keyword '#define'
 
 For example:
-```
+```c++
 // first and second can be reduced to F and S; push_back and make_pair can be reduced to PB and MP
 #define F first
 #define S second
@@ -175,7 +175,7 @@ int d = v[i].F + v[i].S;
 ```
 
 Macros can even have parameters to shorten loops and other structures:
-```
+```c++
 #define REP(i, a, b) for (int i = a; i <= b; i++)
 
 REP(i, 1, n) {
@@ -193,7 +193,7 @@ Absolutely necessary in competitive programming
 ### Sum of an arithmetic progression
 Incrementing sequence of numbers with common difference
 
-==a + ... + b = [n(a + b)] / 2==
+> a + ... + b = [n(a + b)] / 2
 - n is the number of terms
 - a is the first number of the sequence
 - b is the last number of the sequence
@@ -204,7 +204,7 @@ Incrementing sequence of numbers with common difference
 ### Sum of a geometric progression
 Incrementing seqeunce of numbers with common ratio
 
-==ak<sup>0</sup> + ak<sup>1</sup> + ak<sup>2</sup> + ... + b = (bk - 1) / (k-1)==
+> ak<sup>0</sup> + ak<sup>1</sup> + ak<sup>2</sup> + ... + b = (bk - 1) / (k-1)==
 
 
 
