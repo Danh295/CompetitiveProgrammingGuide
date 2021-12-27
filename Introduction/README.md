@@ -204,7 +204,7 @@ Incrementing sequence of numbers with common difference
 ### Sum of a geometric progression
 Incrementing seqeunce of numbers with common ratio
 
-> ak<sup>0</sup> + ak<sup>1</sup> + ak<sup>2</sup> + ... + b = (bk - 1) / (k-1)==
+> ak<sup>0</sup> + ak<sup>1</sup> + ak<sup>2</sup> + ... + b = (bk - 1) / (k-1)
 
 
 
