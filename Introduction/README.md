@@ -190,7 +190,11 @@ Absolutely necessary in competitive programming
 
 ## Sum formulas
 
- h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> x + &theta;<sub>1</sub>x
+<!-- Formatting for mathematical symbols h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> x + &theta;<sub>1</sub>x -->
+
+\sum_{i=1}^n x = 1 + 2 + 3 + ... + n = frac{n(n+1)}{2}
+
+
 
 
 
