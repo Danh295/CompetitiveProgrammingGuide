@@ -193,7 +193,7 @@ Absolutely necessary in competitive programming
 ### Sum of an arithmetic progression
 Incrementing sequence of numbers with common difference
 
-<mark>a + ... + b = [n(a + b)] / 2</mark>
+==a + ... + b = [n(a + b)] / 2==
 - n is the number of terms
 - a is the first number of the sequence
 - b is the last number of the sequence
@@ -204,7 +204,7 @@ Incrementing sequence of numbers with common difference
 ### Sum of a geometric progression
 Incrementing seqeunce of numbers with common ratio
 
-<mark>ak<sup>0</sup> + ak<sup>1</sup> + ak<sup>2</sup> + ... + b = (bk - 1) / (k-1)
+==ak<sup>0</sup> + ak<sup>1</sup> + ak<sup>2</sup> + ... + b = (bk - 1) / (k-1)==
 
 
 
