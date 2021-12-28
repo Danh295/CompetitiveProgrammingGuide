@@ -14,11 +14,27 @@ Here's a basic example of a sorting problem:
 
 Simple algorithms for sorting an array commonly function with this time complexity
 
-**Bubble Sort**
-makes use of a nested for loop
+#### Bubble Sort
+
+*Refer to attached file for c++ code
+
+An algorithm that makes use of a nested for loop
 - iterates through all the elements multiple times, checking 2 adjacent elements at a time
     - adjacent elements that aren't in order are swapped
     - process is repeated until all elements are sorted
 - not an ideal sorting algorithm, especially for larger test cases
 
-**Inversions**
+#### Inversions
+
+Concept useful for analyzing sorting algorithms
+An *inversion* is a pair of array elements that are in the wrong order
+- an array is sorted if there are no inversions
+
+*For example, the following array has 3 inversions:*
+```c++
+int arr[8] = {1, 2, 2, 6, 3, 5, 9, 8};
+```
+- (6, 3)
+- (6, 5)
+- (9, 8)
+
