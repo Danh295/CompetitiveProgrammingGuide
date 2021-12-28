@@ -241,6 +241,7 @@ Values of a logical expression are **true** and **false**
 ***Predicate:*** An expression true or false depending on its parameters
 - a predicate can be defined to be true when x is a prime number
     - denoted as 'P(x)'
+    
 ***Quantifier:*** Logical expression for elements of a set
 - eg. expression is true if *for all* elements *there is* an even integer
 
