@@ -47,7 +47,7 @@ Sorting arrays with much better efficiencies
 Divide and conquer algorithm, based on recursion
 - continuously halves itself and calls the function on itself to sort the array
 
-[<img align="left" alt="merge sort diagram" width="30px" src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/Merge-Sort-Tutorial.png" />]
+<img align="left" alt="merge sort diagram" width="300px" src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/Merge-Sort-Tutorial.png" />
 
 *Pseudocode:*
 ```c++
