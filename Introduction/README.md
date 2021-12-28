@@ -193,18 +193,84 @@ Absolutely necessary in competitive programming
 ### Sum of an arithmetic progression
 Incrementing sequence of numbers with common difference
 
-> a + ... + b = [n(a + b)] / 2
+***a + ... + b = [n(a + b)] / 2***
 - n is the number of terms
-- a is the first number of the sequence
-- b is the last number of the sequence
+- a is the first number
+- b is the last number
 
 *Here's an example:*
-*1 + 2 + 3 + ... + n = [n(n+1)]/2*
+*1 + 2 + 3 + ... + n = [n(n + 1)]/2*
+*3 + 7 + 11 + 15 = [4(3 + 15)] / 2 = 36*
 
 ### Sum of a geometric progression
 Incrementing seqeunce of numbers with common ratio
 
-> ak<sup>0</sup> + ak<sup>1</sup> + ak<sup>2</sup> + ... + b = (bk - 1) / (k-1)
+***ak<sup>0</sup> + ak<sup>1</sup> + ak<sup>2</sup> + ... + b = (bk - 1) / (k - 1)***
+- a is the first number
+- b is the last number
+- k is the ratio 
+
+*Here's an example:*
+*3 + 6 + 12 + 24 = (24 * 2 - 3) / (2 - 1) = 45*
+
+<!-- Harmonic Sum -->
+
+## Set Theory
+
+**Set:** a collection of elements
+- *Intersection* A ∩ B: elements that are in both sets
+- *Union* A ∪ B: all unique elements in both sets
+- *Complement* of set A: elements that are not in the set but are in the universal set
+    - eg. if A = {1, 2, 5, 7} and the universal set is {1, 2, ..., 10}, the complement of A is {3, 4, 6, 8, 9, 10}
+- *Difference* A \ B: elements are in A but not B
+    - eg. if A = {2, 3, 7, 8} and B = {3, 5, 8}, then A \ B = {2. 7}
+
+If all elements of A also belongs to S, then A is a **subset** of S (A ⊂ S)
+
+## Logic
+Values of a logical expression are **true** and **false**
+- 1 is true
+- 0 is false
+
+**Negation:** True if false; false if true
+**Conjuction:** True if both are true
+**Disjunction:** True if either or both are true
+**Implication:** True when the other is also true
+**Equivalence:** True if both are the same 
+
+***Predicate:*** An expression true or false depending on its parameters
+- a predicate can be defined to be true when x is a prime number
+    - denoted as 'P(x)'
+***Quantifier:*** Logical expression for elements of a set
+- eg. expression is true if *for all* elements *there is* an even integer
+
+## Functions
+Basic functions:
+- rounding
+- max (of a set)
+- min (of a set)
+
+### Factorial
+***n! = 1 * 2 * 3 * ... * n***
+
+### Fibonacci 
+***f(n) = f(n - 1) + f(n - 2)***
+
+## Logarithms
+Logarithm of a number x: ***log<sub>k</sub>(x)***
+- k is the base
+- log<sub>k</sub>(x) = a, k<sup>a</sup> = x
+
+Often used in analysis of algorithm efficiency
+- dividing/reducing the number of steps at each step
+
+**Useful property:**
+log<sub>k</sub>(x) = number of times to divide x by k before reaching 1
+- eg. log<sub>2</sub>(32) = 5, 32/2/2/2/2/2 = 1 (divided by 2 five times)
+
+<!-- Contests and resources -->
+
+
 
 
 
