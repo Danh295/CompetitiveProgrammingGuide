@@ -31,10 +31,32 @@ An *inversion* is a pair of array elements that are in the wrong order
 - an array is sorted if there are no inversions
 
 *For example, the following array has 3 inversions:*
-```c++
-int arr[8] = {1, 2, 2, 6, 3, 5, 9, 8};
-```
 - (6, 3)
 - (6, 5)
 - (9, 8)
+```c++
+int arr[8] = {1, 2, 2, 6, 3, 5, 9, 8};
+```
+### O(n log n) Algorithms
 
+Sorting arrays with much better efficiencies
+- unlimited to swapping consective elements
+
+#### Merge Sort
+
+Divide and conquer algorithm, based on recursion
+- continuously halves itself and calls the function on itself to sort the array
+
+[<img align="left" alt="merge sort diagram" width="30px" src="[<img align="left" alt="C++" width="30px" src="https://isocpp.org/assets/images/cpp_logo.png" />]
+
+*Pseudocode:*
+```c++
+mergeSort(l, h) { // l is the lower cap, the starting index of the array; h is the higher cap, the ending index of the array
+    if (l < h) {
+        int mid = (l+j)/2
+        mergeSort(l, mid)
+        mergeSort(mid+1, h)
+        merge(l, mid, h) // merge will combine the 2 divided parts and sort them
+    }
+}
+```
