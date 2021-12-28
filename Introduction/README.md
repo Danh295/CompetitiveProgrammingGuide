@@ -232,20 +232,16 @@ Values of a logical expression are **true** and **false**
 - 1 is true
 - 0 is false
 
-**Negation:** True if false; false if true
-
-**Conjuction:** True if both are true
-
-**Disjunction:** True if either or both are true
-
-**Implication:** True when the other is also true
-
-**Equivalence:** True if both are the same 
+**Negation:** True if false; false if true<br>
+**Conjuction:** True if both are true<br>
+**Disjunction:** True if either or both are true<br>
+**Implication:** True when the other is also true<br>
+**Equivalence:** True if both are the same<br> 
 
 ***Predicate:*** An expression true or false depending on its parameters
 - a predicate can be defined to be true when x is a prime number
     - denoted as 'P(x)'
-
+    
 ***Quantifier:*** Logical expression for elements of a set
 - eg. expression is true if *for all* elements *there is* an even integer
 
