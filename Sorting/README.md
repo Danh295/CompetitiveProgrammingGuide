@@ -47,11 +47,13 @@ Sorting arrays with much better efficiencies
 Divide and conquer algorithm, based on recursion
 - continuously halves itself and calls the function on itself to sort the array
 
-<img class="center" alt="merge sort diagram" width="500px" src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/Merge-Sort-Tutorial.png" /> <br>
+<p align="center">
+    <img alt="merge sort diagram" width="500px" src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/Merge-Sort-Tutorial.png" />
+</p>
 
 *Pseudocode:*
 ```c++
-mergeSort(l, h) { // l is the lower cap, the starting index of the array; h is the higher cap, the ending index of the array
+void mergeSort(l, h) { // l is the lower cap, the starting index of the array; h is the higher cap, the ending index of the array
     if (l < h) {
         int mid = (l+j)/2
         mergeSort(l, mid)
