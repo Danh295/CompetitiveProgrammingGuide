@@ -1,5 +1,7 @@
 # Competitive Programming Guide
-A comprehensive guide based off of the Competitive Programmer's Handbook by Antti Laaksonen. This repository will throroughly run through the particulars of competitive programming, under the assumption that you have knowledge for the basics of progarmmming, but not much experience with compeitive programming.
+A comprehensive guide based off of the Competitive Programmer's Handbook by Antti Laaksonen. This repository will throroughly run through the particulars of competitive programming
+- This guide is completed under the assumption that you have knowledge for the basics of progarmming, and in C++, but not much experience with compeitive programming
+  - There is a focus on algorithms and data structures
 - This repository will mainly contain my personal notes and important information from the handbook
 - The handbook can be found at https://cses.fi/book/book.pdf
 
