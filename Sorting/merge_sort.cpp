@@ -23,6 +23,7 @@ void merge(int arr[], int l, int mid, int h)
     k = l; // initial index fo merged subarray
 
     // sort & merge elements through iteration
+        // this works cuz the temp arrays are already sorted
     while (i < n1 && j < n2) 
     {
         if (templ[i] <= temph[j]) 
