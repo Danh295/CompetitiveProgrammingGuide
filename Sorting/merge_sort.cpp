@@ -57,10 +57,10 @@ void mergeSort(int arr[], int l, int h)
 {
     if (l < h) // recursive execute until subarray only has 1 element
     { 
-        int mid = l + (h - l) / 2;
+        int mid = l + (h - l) / 2; // same as (l + h) / 2, this arrangement helps deal with overflow
 
-        mergeSort(arr, l, mid);
-        mergeSort(arr, mid + 1, h);
+        mergeSort(arr, l, mid); // recursve call on the lower half of array
+        mergeSort(arr, mid + 1, h); // recursive call on the higher half of the array
 
         merge(arr, l, mid, h);
     }
