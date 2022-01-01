@@ -54,11 +54,17 @@ Divide and conquer algorithm, based on recursion
 *Pseudocode:*
 ```c++
 void mergeSort(l, h) { // l is the lower cap, the starting index of the array; h is the higher cap, the ending index of the array
-    if (l < h) {
-        int mid = (l+j)/2
+    if (l < h>) {
+        mid = (l+j) / 2
         mergeSort(l, mid)
-        mergeSort(mid+1, h)
+        mergeSort(mid + 1, h)
         merge(l, mid, h) // merge will combine the 2 divided parts and sort them
     }
 }
 ```
+
+The merge function will take the two split arrays and merge them
+- split arrays will be sorted already, so only a single for loop is needed to sort them
+    - compare the elements by index and add them to the output array
+
+Refer to attached file for basic implementation of the algorithm
