@@ -35,8 +35,16 @@ C++: use 'cin' for input and 'cout' for output
 Including the following lines at the beginning of code can make input/output more efficient for cin and cout
 ```c++
 ios::sync_with_stdio(0);
-cin.tie(0);
 ```
+- all standard streams are synchronized by default, which allows to mix C and C++ I/O
+    - disabling the synchronization, C++ streams will become independent and have their own buffers, making it slightly faster and prevents mixing different I/O streams
+
+```c++
+cin.tie(NULL);
+```
+- tied streams ensure sensible user interaction, where one stream is flushed automatically before each I/O on the other stream
+    - this function unties cin from cout, so cout must be flushed manually everytime it's used
+    - can be more efficient since you control when and where you flush
 
 C: 'scanf' and 'printf' can also be used
 - also applicable for C++ instead of using its standard streams
