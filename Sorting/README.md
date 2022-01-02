@@ -83,3 +83,18 @@ The lower bound of n log n doesn't apply for algorithms that don't compare eleme
 Sorts an array in O(n) time
 - applicable only for *positive integers*
 
+Makes use of a *bookkeeping* array
+- indices of the array are the elements of the original array
+- tracks the occurance of each element
+
+*Here's an example:*
+The orginal array might be: 1, 3, 6, 9, 9, 3, 5, 9
+The bookkeeping array would be: 1, 0, 2, 0, 1, 1, 0, 0, 3
+- *eg. the value at position 3 in the bookkeeping array is 2, since the number '3' appeares twice in the original array*
+
+Constructing the bookkeeping array takes O(n) time, the resutling array can then be constructed and outputted with O(n) time again
+
+Although this is a very efficient algorithm, it's only applicable when the array is small enough and its elements are all positive integers
+
+## Sorting in C++
+
