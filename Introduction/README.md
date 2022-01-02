@@ -144,7 +144,7 @@ if(abs(a-b) < 1e-9) { // 1e-9 means "one times ten to the negative ninth power"
 # Shortening Code
 
 Important in competitive programming to save time
-- try to use shorter names for datatypes, variables, etc.
+- try to use shorter names for datatypes, variables, etc
 
 ## Type names
 
