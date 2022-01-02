@@ -5,8 +5,10 @@
 using namespace std; // "using namespace std" allows classes and functions from the standard library to be used directly in the code; it just saves some time for the programmer
                      // Without this line, we would have to write "std::cout", but with this line, we can just write "cout"
 
-int main() { // Competitive programming does not usually require OOP, thus most of the code is implemented in the main function
-    
+int main() // Competitive programming does not usually require OOP, thus most of the code is implemented in the main function
+{ 
+    ios::sync_with_stdio(0); // same as sync_with_stdio(false);
+    cin.tie(NULL); // unties cin with cout
     // solution 
 
     return 0; //  this line is only necessary for C programs, but including it in C++ doesn't harm the program
