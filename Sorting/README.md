@@ -42,8 +42,7 @@ int arr[8] = {1, 2, 2, 6, 3, 5, 9, 8};
 Sorting arrays with much better efficiencies
 - unlimited to swapping consective elements
 
-#### Merge Sort
-
+**Merge Sort:**
 Divide and conquer algorithm, based on recursion
 - continuously halves itself and calls the function on itself to sort the array
 
@@ -64,7 +63,23 @@ void mergeSort(l, h) { // l is the lower cap, the starting index of the array; h
 ```
 
 The merge function will take the two split arrays and merge them
-- split arrays will be sorted already, so only a single for loop is needed to sort them
+- split arrays will already be sorted; only a single loop is needed to sort collectively and merge
     - compare the elements by index and add them to the output array
 
 Refer to attached file for basic implementation of the algorithm
+
+### Sorting Lower Bound
+Sorting algorithms based on *comparing* array elements are limited to O(n log n)
+
+*O(n log n) time is the fastest possible time in a comparision type sorting algorithm
+- different algorithms will be faster under different circumstances 
+    - merge sort is NOT ALWAYS the fastest
+
+### Counting Sort
+The lower bound of n log n doesn't apply for algorithms that don't compare elements
+- algorithms can use other information to sort arrays
+
+**Couting Sort:**
+Sorts an array in O(n) time
+- applicable only for *positive integers*
+
