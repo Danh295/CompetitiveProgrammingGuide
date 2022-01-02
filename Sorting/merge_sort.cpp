@@ -71,6 +71,7 @@ int main()
 {
     // INIT
     ios::sync_with_stdio(0);
+    cin.tie(NULL);
 
     // INPUT
         // 12, 11, 13, 7, 6, 7
