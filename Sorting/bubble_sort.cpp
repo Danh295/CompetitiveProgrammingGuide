@@ -4,7 +4,8 @@ using namespace std;
 
 int main(){
     ios::sync_with_stdio(0);
-    cin.tie(NULL);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
 
     int arr[8] = {1, 3, 8, 2, 9, 2, 5, 6};
     int n = sizeof(arr)/sizeof(arr[0]);
