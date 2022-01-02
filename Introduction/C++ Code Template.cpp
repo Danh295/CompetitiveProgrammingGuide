@@ -8,7 +8,8 @@ using namespace std; // "using namespace std" allows classes and functions from 
 int main() // Competitive programming does not usually require OOP, thus most of the code is implemented in the main function
 { 
     ios::sync_with_stdio(0); // same as sync_with_stdio(false);
-    cin.tie(NULL); // unties cin with cout
+    cin.tie(nullptr); // unties cin with cout
+    cout.tie(nullptr);
     // solution 
 
     return 0; //  this line is only necessary for C programs, but including it in C++ doesn't harm the program
