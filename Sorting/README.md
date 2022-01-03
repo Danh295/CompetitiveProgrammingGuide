@@ -22,7 +22,7 @@ An algorithm that makes use of a nested for loop
 - iterates through all the elements multiple times, checking 2 adjacent elements at a time
     - adjacent elements that aren't in order are swapped
     - process is repeated until all elements are sorted
-- not an ideal sorting algorithm, especially for larger test cases
+- not ideal, especially for larger test cases
 
 #### Inversions
 
@@ -71,7 +71,7 @@ Refer to attached file for basic implementation of the algorithm
 ### Sorting Lower Bound
 Sorting algorithms based on *comparing* array elements are limited to O(n log n)
 
-*O(n log n) time is the fastest possible time in a comparision type sorting algorithm
+O(n log n) time is the fastest possible time in a comparision type sorting algorithm
 - different algorithms will be faster under different circumstances 
     - merge sort is NOT ALWAYS the fastest
 
@@ -97,7 +97,7 @@ Constructing the bookkeeping array takes O(n) time, the resutling array can then
 Although this is a very efficient algorithm, it's only applicable when the array is small enough and its elements are all positive integers
 
 ## Sorting in C++
-The C__ standard library contains many implementations and functions that can carry out sorting algorithms for you
+The C++ standard library contains many implementations and functions that can carry out sorting algorithms for you
 - making your own algorithm isn't always ideal
 - using stl functions has many benefits
     - saves time
