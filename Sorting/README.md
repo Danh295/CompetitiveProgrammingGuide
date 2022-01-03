@@ -5,7 +5,7 @@ Fundamental to many algorithms; sorted data is easier to process
 ## Sorting Theory
 
 Here's a basic example of a sorting problem:
-> Given an array that contains 'n' elements, sort the elements in increasing order
+> Given an array that contains ```n``` elements, sort the elements in increasing order
 
 *Input:* 1, 3, 8, 2, 9, 2, 5, 6 
 *Output:* 1, 2, 2, 3, 5, 6, 8, 9
@@ -116,15 +116,15 @@ The following sorts a vector in increasing order
 vector<int> v = {4, 2, 5, 3, 8, 3};
 sort(v.begin(), v.end());
 ```
-- v.begin() and v.end() are iterator values for the scope of the function
+- ```v.begin()``` and ```v.end()``` are iterator values for the scope of the function
     - referred to as pointer values
-- after the sort, the vector becomes {2, 3, 3, 4, 5, 5, 8}
+- after the sort, the vector becomes ```{2, 3, 3, 4, 5, 5, 8}```
 
 The following sorts an integer array:
 ```c++
 sort(arr, arr + n);
 ```
-- n is the size of the array, arr is the name of the array
+- ```n``` is the size of the array, ```arr``` is the name of the array
 
 The following sorts a vector in reverse order (decreasing)
 ```c++
@@ -132,15 +132,15 @@ sort(v.rbegin(), v.rend());
 // or
 sort(v.begin(), v.end(), greater<int>());
 ```
-- .rbegin() and .rend() returns reverse iterators pointing to the opposite end of the container, which will reverse the order
+- ```.rbegin()``` and ```.rend()``` returns reverse iterators pointing to the opposite end of the container, which will reverse the order
 - using iterators for normal arrays may not be ideal
-    - passing greater<>() works just the same
-    - greater<>() is a functional object for performing comparisions
+    - passing ```greater<>()``` works just the same
+    - ```greater<>()``` is a functional object for performing comparisions
 
-***IMPORTANT:*** To use the greater<>() function, must pass the header file <functional.h\>
+***IMPORTANT:*** To use the ```greater<>()``` function, must pass the header file ```<functional.h\>```
 
 Strings can also be sorted with this function
-- they will be sorted by ascii value, in alphabetical order
+- they will be sorted by ASCII value, in alphabetical order
     - *eg. "monkey" becomes "ekmnoy"*
 
 ### Comparing Operators
