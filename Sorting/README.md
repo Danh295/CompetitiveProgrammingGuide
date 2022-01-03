@@ -137,7 +137,7 @@ sort(v.begin(), v.end(), greater<int>());
     - passing greater<>() works just the same
     - greater<>() is a functional object for performing comparisions
 
-***IMPORTANT:** To use the greater<>() function, must pass the header file '<functional.h\>'
+***IMPORTANT:*** To use the greater<>() function, must pass the header file <functional.h\>
 
 Strings can also be sorted with this function
 - they will be sorted by ascii value, in alphabetical order
