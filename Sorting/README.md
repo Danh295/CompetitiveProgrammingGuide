@@ -5,7 +5,7 @@ Fundamental to many algorithms; sorted data is easier to process
 ## Sorting Theory
 
 Here's a basic example of a sorting problem:
-> Given an array that contains ```n``` elements, sort the elements in increasing order
+"Given an array that contains ```n``` elements, sort the elements in increasing order"
 
 Input: ```1, 3, 8, 2, 9, 2, 5, 6```
 
