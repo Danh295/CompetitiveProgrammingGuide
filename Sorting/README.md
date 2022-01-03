@@ -144,6 +144,7 @@ Strings can also be sorted with this function
     - *eg. "monkey" becomes "ekmnoy"*
 
 ### Comparing Operators
-
+The sort function requires a comparision operator for the data type of the elements to be sorted
+- most data types have operators built-in like ```int```
 
 
