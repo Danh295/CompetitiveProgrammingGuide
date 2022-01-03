@@ -7,8 +7,9 @@ Fundamental to many algorithms; sorted data is easier to process
 Here's a basic example of a sorting problem:
 > Given an array that contains ```n``` elements, sort the elements in increasing order
 
-*Input:* 1, 3, 8, 2, 9, 2, 5, 6 
-*Output:* 1, 2, 2, 3, 5, 6, 8, 9
+*Input:* ```1, 3, 8, 2, 9, 2, 5, 6```
+
+*Output:* ```1, 2, 2, 3, 5, 6, 8, 9```
 
 ### O(n<sup>2</sup>) Algorithms
 
