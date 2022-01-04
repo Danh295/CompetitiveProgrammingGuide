@@ -33,12 +33,13 @@ An *inversion* is a pair of array elements that are in the wrong order
 - an array is sorted if there are no inversions
 
 *For example, the following array has 3 inversions:*
-- (6, 3)
-- (6, 5)
-- (9, 8)
 ```c++
 int arr[8] = {1, 2, 2, 6, 3, 5, 9, 8};
 ```
+- (6, 3)
+- (6, 5)
+- (9, 8)
+  
 ### O(n log n) Algorithms
 
 Sorting arrays with much better efficiencies
@@ -106,29 +107,29 @@ The C++ standard library contains many implementations and functions that can ca
     - 100% functional & efficient
     - likely better than the function you code
 
-***'sort' function***
+**```sort``` function:**
 C++ standard library function that sorts arrays
 - defaulted to increasing order
-- makes use of **introsort**
-- Worst case: O(n log n)
+- *introsort* algorithm
+- worst case: O(n log n)
     - efficiency & effectiveness can depend on situation
 
-The following sorts a vector in increasing order
+*The following sorts a vector in increasing order:*
 ```c++
 vector<int> v = {4, 2, 5, 3, 8, 3};
 sort(v.begin(), v.end());
 ```
 - ```v.begin()``` and ```v.end()``` are iterator values for the scope of the function
     - referred to as pointer values
-- after the sort, the vector becomes ```{2, 3, 3, 4, 5, 5, 8}```
+- sorted vector is ```{2, 3, 3, 4, 5, 5, 8}```
 
-The following sorts an integer array:
+*The following sorts an integer array:*
 ```c++
 sort(arr, arr + n);
 ```
 - ```n``` is the size of the array, ```arr``` is the name of the array
 
-The following sorts a vector in reverse order (decreasing)
+*The following sorts a vector in reverse (decreasing) order:*
 ```c++
 sort(v.rbegin(), v.rend());
 // or
@@ -145,8 +146,41 @@ Strings can also be sorted with this function
 - they will be sorted by ASCII value, in alphabetical order
     - *eg. "monkey" becomes "ekmnoy"*
 
-### Comparing Operators
+### Comparision Operators
 The sort function requires a comparision operator for the data type of the elements to be sorted
-- most data types have operators built-in like ```int```
 
+Most data types have operators built-in like ```int```; these data types are automatically sorted:
+  
+**```int```** sorted by value
+
+**```string```** sorted by alphabet
+
+**```pair```** sorted by value of ```first```
+- if ```first``` of 2 elements are equal, ```second``` is used instead
+
+*The following sorts a vector of pairs:*
+```c++
+vector<pair<int, int>> v;
+v.push_back({1, 5});
+v.push_back({2, 3});
+v.push_back({1, 2});
+sort(v.begin(), v.end());
+```
+- sorted vector is ```{{1, 2}, {1, 5}, {2, 3}}```
+
+**```tuple```** sorted primarily by first element
+- if first elements are equal, following elements will be compared
+  - second elements compared first; if equal, move on to third; if equal, move on to fourth, etc
+
+*The following sorts a vector of tuples*
+```c++
+vector<tuple<int, int, int>> v;
+v.push_back({2, 1, 4});
+v.push_back({1, 5, 3});
+v.push_back({2, 1, 3});
+sort(v.begin(), v.end());
+```
+- sorted vector is ```{{1, 5, 3}, {2, 1, 3}, {2, 1, 4}}```
+
+### User-defined structures
 
