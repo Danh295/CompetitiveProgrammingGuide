@@ -17,7 +17,7 @@ int main(){
     // PROCESS
     for(int i=0; i<n; i++){
         for(int j=0; j<n-1; j++){
-            if(arr[j]>arr[j+1]){
+            if(arr[j]>arr[j+1] && arr[i]!=arr[j]){
                 cout<<arr[j]<<", "<<arr[j+1]<<"\n";
                 swap(arr[j],arr[j+1]);
                 cout<<"new: "<<arr[j]<<", "<<arr[j+1]<<"\n";
