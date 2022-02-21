@@ -204,6 +204,8 @@ struct P {
 
 ### Comparion functions
 External comparison functions can be given to ```sort``` function as a callback function
+- will basically tell the function how to sort
+    if your struct has 2 different values, normal ```sort``` won't know which to sort by
 
 *The following function ```comp``` sorts strings by primarily length and secondaryly by alphabetical order*
 ```c++
