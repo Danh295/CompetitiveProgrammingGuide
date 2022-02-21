@@ -184,3 +184,37 @@ sort(v.begin(), v.end());
 
 ### User-defined structures
 
+Usual comprison operators aren't applicable
+
+- define operator as a function ```operator<```
+    - same type element as parameter
+    - return ```true``` if element smaller than parameter, ```false``` otherwise
+
+*The following struct ```P``` contains x & y coords of a point*
+- *comparison operator primarily sorts x-value, secondarily by y-value*
+```c++
+struct P {
+    int x, y;
+
+    // comparison operator function
+    bool operator<(const P &p) {
+        if (x != p.x) return x < p.x;
+        else return y < p.y;
+    }
+}
+```
+
+### Comparion functions
+External comparison functions can be given to ```sort``` function as a callback function
+
+*The following function ```comp``` sorts strings by primarily length and secondaryly by alphabetical order*
+```c++
+bool comp(string a, string b) {
+    if (a.size() != b.size()) return a.size() < b.size(); 
+    return a < b;
+}
+```
+*A vector of strings can now be sorted as follows*
+```c++
+sort(v.begin(), v.end(), comp);
+```
