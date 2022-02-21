@@ -151,12 +151,10 @@ The sort function requires a comparision operator for the data type of the eleme
 
 Most data types have operators built-in like ```int```; these data types are automatically sorted:
   
-**```int```** sorted by value
-
-**```string```** sorted by alphabet
-
-**```pair```** sorted by value of ```first```
-- if ```first``` of 2 elements are equal, ```second``` is used instead
+- **```int```** sorted by value
+- **```string```** sorted by alphabet
+- **```pair```** sorted by value of ```first```
+    - if ```first``` of 2 elements are equal, ```second``` is used instead
 
 *The following sorts a vector of pairs:*
 ```c++
