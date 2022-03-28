@@ -1,8 +1,5 @@
-# Sorting
-
-Fundamental to many algorithms; sorted data is easier to process
-
-## Sorting Theory
+# Sorting Theory
+<hr>
 
 Here's a basic example of a sorting problem:
 
@@ -10,11 +7,11 @@ Here's a basic example of a sorting problem:
 ><br>Input: ```1, 3, 8, 2, 9, 2, 5, 6```
 ><br>Output: ```1, 2, 2, 3, 5, 6, 8, 9```
 
-### O(n<sup>2</sup>) Algorithms
+## O(n<sup>2</sup>) Algorithms
 
 Simple algorithms for sorting an array commonly function with this time complexity
 
-#### Bubble Sort Algorithm
+### Bubble Sort Algorithm
 
 *Refer to attached file for c++ code*
 
@@ -24,7 +21,7 @@ An algorithm that makes use of a nested for loop
     - process is repeated until all elements are sorted
 - not ideal, especially for larger test cases
 
-#### Inversions
+### Inversions
 
 Useful concept to analyze sorting algorithms: <br>
 An **inversion** is a pair of array elements that are in the wrong order
@@ -38,12 +35,12 @@ int arr[8] = {1, 2, 2, 6, 3, 5, 9, 8};
 - (6, 5)
 - (9, 8)
   
-### O(n log n) Algorithms
+## O(n log n) Algorithms
 
 Sorting arrays with much better efficiencies
 - unlimited to swapping consective elements
 
-#### Merge Sort Algorithm
+### Merge Sort Algorithm
 Divide and conquer algorithm, based on recursion
 - continuously halves itself and calls the function on itself to sort the array
 
@@ -98,7 +95,8 @@ Constructing the bookkeeping array takes O(n) time, the resutling array can then
 
 Although this is a very efficient algorithm, it's only applicable when the array is small enough and its elements are all positive integers
 
-## Sorting in C++
+# Sorting in C++
+<hr>
 The C++ standard library contains many implementations and functions that can carry out sorting algorithms for you
 - making your own algorithm isn't always ideal
 - using stl functions has many benefits
@@ -106,7 +104,7 @@ The C++ standard library contains many implementations and functions that can ca
     - 100% functional & efficient
     - likely better than the function you code
 
-### The ```sort``` Function
+## The ```sort``` Function
 C++ standard library function that sorts arrays
 - defaulted to increasing order
 - *introsort* algorithm
@@ -145,7 +143,7 @@ Strings can also be sorted with this function
 - they will be sorted by ASCII value, in alphabetical order
     - *eg. "monkey" becomes "ekmnoy"*
 
-### Comparision Operators
+## Comparision Operators
 The sort function requires a comparision operator for the data type of the elements to be sorted
 
 Most data types have operators built-in like ```int```; these data types are automatically sorted:
@@ -179,7 +177,7 @@ sort(v.begin(), v.end());
 ```
 - sorted vector is ```{{1, 5, 3}, {2, 1, 3}, {2, 1, 4}}```
 
-### User-defined structures
+## User-defined structures
 
 Usual comprison operators aren't applicable
 
@@ -201,7 +199,7 @@ struct P {
 }
 ```
 
-### Comparion functions
+## Comparion functions
 External comparison functions can be given to ```sort``` function as a callback function
 - will basically tell the function how to sort
     if your struct has 2 different values, normal ```sort``` won't know which to sort by
@@ -217,3 +215,30 @@ bool comp(string a, string b) {
 ```c++
 sort(v.begin(), v.end(), comp);
 ```
+
+# Binary search
+
+<hr>
+
+*If* the arry is sorted, this algorithm can seach for an element in *O(log n)* time
+
+## Method 1
+At each step, the search checks for the middle element of given range
+- *if* middle element is the target element, the search terminates and that position is returned
+- *else* recursively continue searching to the left/right half of the region, depending on if the target is greater than or less than the middle element, depending
+
+**Example Implementation:** 
+```c++
+int startIndex = 0, endIndex = n-1, target;
+
+while (startIndex <= endIndex) {
+    int middleIndex = (startIndex+endIndex)/2;
+    if (array[middleIndex] == target) {
+        // return: x found at middleIndex
+    }
+    if (array[middleIndex] > target) higherIndex = middleIndex-1;
+    else lowerIndex = middleIndex+1;
+}
+```
+Here, the given range is between ```lowerIndex``` and ```higherIndex```
+- The algorithm halves the range each time, decreasing the number of operations, which results in a time complexity of O(log n)
