@@ -3,8 +3,7 @@
 
 using namespace std;
 
-void merge(int arr[], int l, int mid, int h) 
-{
+void merge(int arr[], int l, int mid, int h) {
     int i, j, k; // iterator variables
 
     int n1 = mid - l + 1; // size of lower temp array
@@ -24,15 +23,12 @@ void merge(int arr[], int l, int mid, int h)
 
     // sort & merge elements through iteration
         // this works cuz the temp arrays are already sorted
-    while (i < n1 && j < n2) 
-    {
-        if (templ[i] <= temph[j]) 
-        {
+    while (i < n1 && j < n2) {
+        if (templ[i] <= temph[j]) {
             arr[k] = templ[i];
             i++;
         } 
-        else 
-        {
+        else {
             arr[k] = temph[j];
             j++;
         }
@@ -40,24 +36,20 @@ void merge(int arr[], int l, int mid, int h)
     }
 
     // copy remaining elements if there are any
-    while (i < n1) 
-    {
+    while (i < n1) {
         arr[k] = templ[i];
         i++;
         k++;
     }
-    while (j < n2) 
-    {
+    while (j < n2) {
         arr[k] = temph[j];
         j++;
         k++;
     }
 }
 
-void mergeSort(int arr[], int l, int h) 
-{
-    if (l < h) // recursive execute until subarray only has 1 element
-    { 
+void mergeSort(int arr[], int l, int h) {
+    if (l < h) { // recursive execute until subarray only has 1 element 
         int mid = l + (h - l) / 2; // same as (l + h) / 2, this arrangement helps deal with overflow
 
         mergeSort(arr, l, mid); // recursve call on the lower half of array
@@ -67,8 +59,7 @@ void mergeSort(int arr[], int l, int h)
     }
 }
 
-int main() 
-{
+int main() {
     // INIT
     ios::sync_with_stdio(0);
     cin.tie(nullptr);
