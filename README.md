@@ -1,5 +1,7 @@
 # Competitive Programming Guide
 
+***NOTICE: progress currently on hold***
+
 ***IMPORTANT:***
 I'm using a proper note taking platform for my own learning as well, and for the sake of time I haven't been updating this guide often. This repository will still be in the works but expect to see slower updates over longer periods of time
 
