@@ -19,7 +19,7 @@ Most popular languages used in contests:
 - Java
 - Python
 
-C++ often considered as the best choice for competitive3 programming
+C++ often considered as the best choice for competitive programming
 - nearly always available in contest systems
 - efficient high-capacity language
 - standard library contains numerous data structures and algorithms
